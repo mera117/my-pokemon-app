@@ -1,3 +1,54 @@
+🧪 Proyecto Técnico: Pokédex con Next.js, React Query y Tailwind
+Este proyecto es parte de una prueba técnica para desarrolladores frontend. Se trata de una aplicación web construida con Next.js, React Query, TypeScript, TailwindCSS y Jest, que consume la API pública de Pokémon y permite visualizar, filtrar y explorar datos de diferentes Pokémon.
+
+🚀 Demo
+    Aplicación desplegada: https://mi-pokedex.vercel.app ← (reemplaza por tu URL real)
+    Repositorio en GitHub: https://github.com/usuario/pokedex ← (reemplaza por tu repo)
+
+
+
+🧱 Tecnologías utilizadas
+    Next.js – Framework de React para SSR/SSG
+    TypeScript – Tipado estático
+    TailwindCSS – Estilos rápidos y responsive
+    React Query – Manejo de datos asíncronos
+    Jest + MSW – Pruebas unitarias e interceptación de APIs
+    PokeAPI – API pública de datos Pokémon
+
+🧩 Estructura del proyecto
+
+/
+├── app/                        → Páginas y rutas del proyecto
+│   └── components/             → Componentes específicos por vista
+├── components/                → Componentes globales reutilizables
+├── constants/                 → Constantes como tipos de Pokémon
+├── hooks/                     → Hooks personalizados con React Query
+├── public/                    → Imágenes públicas (favicon, etc.)
+├── services/                  → Lógica de acceso a la API (axios)
+├── styles/                    → Archivos CSS globales
+├── tests/                     → Pruebas unitarias con Jest + MSW
+│   └── mocks/                 → Handlers de MSW para endpoints
+├── types/                     → Tipos TypeScript globales
+└── utils/                     → Funciones auxiliares y helpers
+
+✅ Funcionalidades
+    📄 Página de listado de Pokémon con paginación
+    🔍 Filtro por nombre y tipo de Pokémon
+    📌 Vista de detalle para cada Pokémon
+    🧠 Lógica encapsulada en hooks (usePokemonList, usePokemonDetails, etc.)
+    💅 Estilos responsive con Tailwind
+    🧪 Pruebas unitarias para hooks y componentes
+
+
+🧪 Ejecutar pruebas
+    npm install
+    npm test
+
+Las pruebas utilizan:
+    jest
+    @testing-library/react
+    msw para mockear las llamadas a la API
+    Cobertura de hooks como usePokemonDetails y componentes como PokemonCard
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
